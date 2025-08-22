@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,700&family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #fff;
+  color: black;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #324cdc;
+  color:#fff;
+  padding: 20px 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+   margin-left: 200px;
+}
+
+.navigation ul {
+ margin-right: 200px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navigation a.button {
+  border: 2px solid #fff;
+  padding: 20px 25px;
+
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-top: 60px;
+  margin-right: 200px;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.hero-image {
+    
+  max-width: 420px;
+  height: auto;
+}
+
+.winners {
+  background-color: white;
+  padding: 80px 100px;
+}
+
+.winners h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+   margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.winner-card1 {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 60px;
+}
+
+.winner-card2 {
+       flex-direction: row-reverse;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 60px;
+}
+
+.winner-card3 {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 60px;
+}
+
+.winner-card {
+  width: 280px;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+.winner-text{
+    margin-top: 80px;
+    margin-right: 200px;
+}
+.winner-text h3 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.winner-text p {
+  font-size: 1rem;
+}
+
+
+.footer {
+  background-color: #324cdc;
+  text-align: center;
+  color: #fff;
+  padding: 60px 30px;
+}
+
+.footer h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.footer .get-ticket {
+  display: inline-block;
+  color: white;
+border: 2px solid #fff;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .navigation ul {
+    margin-right: 0;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 20px;
+    gap: 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .winners {
+    padding: 40px 20px;
+  }
+
+  .winners h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .winner-card1,
+  .winner-card2,
+  .winner-card3 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 40px;
+    gap: 20px;
+  }
+
+  .winner-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .winner-text {
+    margin: 20px 0 0;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .navigation ul {
+    margin-right: 0;
+    justify-content: flex-end;
+  }
+
+  .hero {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;
+    gap: 30px;
+    text-align: left;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    flex: 1 1 50%;
+  }
+
+  .hero-image {
+    flex: 1 1 50%;
+    max-width: 100%;
+  }
+
+  .winners {
+    padding: 60px 40px;
+  }
+
+  .winners h2 {
+    margin-left: 0;
+  }
+
+  .winner-card1,
+  .winner-card2,
+  .winner-card3 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+    .winner-card {
+    width: 45%;
+  }
+
+  .winner-text {
+    margin-top: 20px;
+    margin-right: 0;
+  }
+}
